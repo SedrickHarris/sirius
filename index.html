@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Business Name - AI & SaaS Development</title>
+    <title>Sirius Systems - AI & SaaS Development</title>
     
     <!-- SEO & Social Media Meta Tags -->
     <!-- Add your own custom meta tags here for SEO, Open Graph, and Twitter Cards -->
     <meta name="description" content="Your custom description for search engines.">
-    <meta property="og:title" content="Your Business Name | AI Solutions & Web Development">
+    <meta property="og:title" content="Sirius Systems | AI Solutions & Web Development">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -17,6 +17,9 @@
     <!-- Lucide Icons for vector icons -->
     <script src="https://unpkg.com/lucide@latest/dist/lucide.js"></script>
     
+    <!-- Static widget script here to ensure it loads before its target iframe -->
+    <script type="text/javascript" src="https://link.siriussys.io/reputation/assets/review-widget.js"></script>
+
     <style>
         :root {
             --color-bright-blue: #4A90E2;
@@ -81,7 +84,7 @@
     <header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center transition-all duration-300">
             <!-- Logo -->
-            <a href="#" class="text-3xl font-bold tracking-tighter gradient-text">Your Business Name</a>
+            <a href="#" class="text-3xl font-bold tracking-tighter gradient-text">Sirius Systems</a>
 
             <!-- Desktop Navigation -->
             <ul id="nav-menu" class="hidden md:flex space-x-4 items-center text-sm font-medium">
@@ -217,39 +220,14 @@
             <p class="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">See what our clients have to say about working with us.</p>
             
             <div class="glassmorphism p-8 rounded-3xl max-w-4xl mx-auto">
-                <div id="reviews-widget-container" class="relative w-full h-auto min-h-[500px]"></div>
-                <!-- JavaScript to dynamically load the review widget for reliable animation -->
-                <script>
-                    document.addEventListener('DOMContentLoaded', () => {
-                        const scriptUrl = 'https://link.siriussys.io/reputation/assets/review-widget.js';
-                        const iframeUrl = 'https://link.siriussys.io/reputation/widgets/review_widget/qsRpwFouj6uMgzSHHDn3';
-
-                        // Check if the script has already been loaded
-                        if (!document.querySelector(`script[src="${scriptUrl}"]`)) {
-                            // Create a new script element for the widget
-                            const script = document.createElement('script');
-                            script.type = 'text/javascript';
-                            script.src = scriptUrl;
-                            script.onload = () => {
-                                // Once the script is loaded, create and append the iframe
-                                const iframe = document.createElement('iframe');
-                                iframe.className = 'lc_reviews_widget';
-                                iframe.src = iframeUrl;
-                                iframe.frameBorder = '0';
-                                iframe.scrolling = 'no';
-                                iframe.style.minWidth = '100%';
-                                iframe.style.width = '100%';
-
-                                const container = document.getElementById('reviews-widget-container');
-                                if (container) {
-                                    container.appendChild(iframe);
-                                }
-                            };
-                            // Append the script to the body to start loading
-                            document.body.appendChild(script);
-                        }
-                    });
-                </script>
+                <!-- Static embed with a min-height for better user experience -->
+                <iframe
+                    class="lc_reviews_widget"
+                    src="https://link.siriussys.io/reputation/widgets/review_widget/qsRpwFouj6uMgzSHHDn3"
+                    frameborder="0"
+                    scrolling="no"
+                    style="min-width:100%; width:100%; display:block; min-height:520px;"
+                ></iframe>
             </div>
         </div>
     </section>
@@ -268,7 +246,7 @@
                 <div class="glassmorphism p-6 rounded-3xl service-card">
                     <h3 class="text-2xl font-bold mb-4">Book a Time</h3>
                     <p class="text-gray-400 mb-4">Select a date and time that works for you.</p>
-                    <div class="relative w-full h-[800px] overflow-hidden rounded-2xl flex items-center justify-center">
+                    <div class="relative w-full h-[1000px] overflow-hidden rounded-2xl flex items-center justify-center">
                         <iframe src="https://link.siriussys.io/widget/booking/Qn4ugo4iZ8ZJ8eaxX1c4" style="width: 100%;border:none;overflow: hidden;" scrolling="no" id="Qn4ugo4iZ8ZJ8eaxX1c4_1756881301837"></iframe><script src="https://link.siriussys.io/js/form_embed.js" type="text/javascript"></script>
                     </div>
                 </div>
@@ -277,7 +255,7 @@
                 <div class="glassmorphism p-6 rounded-3xl service-card">
                     <h3 class="text-2xl font-bold mb-4">Contact Us</h3>
                     <p class="text-gray-400 mb-4">Fill out the form below and we'll be in touch.</p>
-                    <div class="relative w-full h-[800px] overflow-hidden rounded-2xl">
+                    <div class="relative w-full h-[900px] overflow-hidden rounded-2xl">
                         <iframe
                             src="https://link.siriussys.io/widget/form/BHqYGk6NAbu58Q68tSRk"
                             style="width:100%;height:100%;border:none;border-radius:3px"
@@ -306,7 +284,7 @@
     <!-- Footer -->
     <footer class="relative py-12 text-center text-sm text-gray-500">
         <div class="container mx-auto px-6">
-            <p>&copy; 2025 Your Business Name. All rights reserved.</p>
+            <p>&copy; 2025 Sirius Systems. All rights reserved.</p>
         </div>
     </footer>
 
