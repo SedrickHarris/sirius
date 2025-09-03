@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sirius Systems - AI & SaaS Development</title>
+
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Custom AI, automations, and SaaS solutions that streamline workflows and drive growth."/>
+  <meta property="og:title" content="Sirius Systems | AI Solutions & Web Development"/>
+
+  <!-- Tailwind (CDN) & Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/lucide.js"></script>
+
+  <!-- IMPORTANT: Load the vendor review widget script ONCE, early -->
+  <script type="text/javascript" src="https://link.siriussys.io/reputation/assets/review-widget.js"></script>
+
+  <style>
+    :root {
+      --color-bright-blue: #4A90E2;
+      --color-deep-green: #045C43;
+      --color-light-text: #F6F6F6;
+      --color-deep-navy: #021B23;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--color-light-text);
+      background-color: #000;
+      overflow-x: hidden;
+    }
+    .gradient-text {
+      background-image: linear-gradient(to top right, var(--color-bright-blue), var(--color-deep-green));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .cta-button {
+      background-image: linear-gradient(to right, var(--color-bright-blue), var(--color-deep-green));
+      transition: all .3s ease-in-out;
+      box-shadow: 0 0 15px rgba(74, 144, 226, .5);
+    }
+    .cta-button:hover {
+      box-shadow: 0 0 25px rgba(74, 144, 226, .8), 0 0 40px rgba(4, 92, 67, .6);
+      transform: translateY(-2px);
+    }
+    .glassmorphism {
+      background: rgba(2, 27, 35, .4);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,.1);
+    }
+    .service-card { transition: transform .3s, box-shadow .3s; }
+    .service-card:hover {
+      transform: translateY(-10px) rotateY(3deg);
+      box-shadow: 0 15px 40px rgba(74, 144, 226, .7), 0 0 30px rgba(4, 92, 67, .5);
+    }
+    .perspective-container { perspective: 1200px; }
+  </style>
+</head>
+<body class="bg-black text-[#F6F6F6] antialiased">
+
+  <!-- Header -->
+  <header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-3xl font-extrabold tracking-tighter gradient-text">Sirius Systems</a>
+      <ul id="nav-menu" class="hidden md:flex space-x-4 items-center text-sm font-medium">
+        <li><a href="#services" class="hover:text-[var(--color-bright-blue)] transition">Services</a></li>
+        <li><a href="#clients" class="hover:text-[var(--color-bright-blue)] transition">Clients</a></li>
+        <li><a href="#hero" class="py-2.5 px-6 rounded-full cta-button font-semibold">Get Started</a></li>
+      </ul>
+      <button id="hamburger-menu" class="md:hidden z-50 focus:outline-none" aria-label="Toggle mobile menu">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"/>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="relative h-screen flex flex-col items-center justify-center text-center p-6 md:p-12 overflow-hidden">
+    <div class="relative z-10 max-w-4xl space-y-6">
+      <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter">
+        <span class="gradient-text">Transform Your Business</span> with AI Automation
+      </h1>
+      <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
+        Building custom AI & SaaS solutions to streamline workflows and drive growth.
+      </p>
+      <div class="flex items-center justify-center mt-8">
+        <a href="#contact" class="py-4 px-10 rounded-full cta-button font-semibold">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="relative py-20 overflow-hidden">
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-[linear-gradient(45deg,_var(--color-deep-navy)_20%,_transparent_100%)] opacity-50 z-0"></div>
+    <div class="container mx-auto px-6 relative z-10">
+      <h2 class="text-4xl md:text-5xl font-bold mb-16 text-center">Our <span class="gradient-text">Core Services</span></h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 perspective-container">
+        <!-- 1 -->
+        <div class="p-8 rounded-3xl glassmorphism service-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" class="mb-4 text-[var(--color-bright-blue)]" viewBox="0 0 24 24"><path d="M12 2v20M17.44 3.51l-10.88 16.98M4.4 12h15.2M17.44 20.49l-10.88-16.98"/></svg>
+          <h3 class="text-2xl font-bold mb-2">AI Solutions</h3>
+          <p class="text-gray-400">Innovative AI that solves complex problems and creates new opportunities.</p>
+        </div>
+        <!-- 2 -->
+        <div class="p-8 rounded-3xl glassmorphism service-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" class="mb-4 text-[var(--color-bright-blue)]" viewBox="0 0 24 24"><rect width="20" height="15" x="2" y="3" rx="2" ry="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+          <h3 class="text-2xl font-bold mb-2">Web Design</h3>
+          <p class="text-gray-400">Modern, responsive sites built for performance and conversion.</p>
+        </div>
+        <!-- 3 -->
+        <div class="p-8 rounded-3xl glassmorphism service-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" class="mb-4 text-[var(--color-bright-blue)]" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          <h3 class="text-2xl font-bold mb-2">Automation</h3>
+          <p class="text-gray-400">Automate repetitive tasks so your team can focus on strategy.</p>
+        </div>
+        <!-- 4 -->
+        <div class="p-8 rounded-3xl glassmorphism service-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" class="mb-4 text-[var(--color-bright-blue)]" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <h3 class="text-2xl font-bold mb-2">AI Conversational Systems</h3>
+          <p class="text-gray-400">Text and voice bots for 24/7 support and lead capture.</p>
+        </div>
+        <!-- 5 -->
+        <div class="p-8 rounded-3xl glassmorphism service-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" class="mb-4 text-[var(--color-bright-blue)]" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <h3 class="text-2xl font-bold mb-2">Reputation Management</h3>
+          <p class="text-gray-400">Proactively improve and promote your online reputation.</p>
+        </div>
+        <!-- 6 -->
+        <div class="p-8 rounded-3xl glassmorphism service-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" class="mb-4 text-[var(--color-bright-blue)]" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <h3 class="text-2xl font-bold mb-2">GBP Optimization</h3>
+          <p class="text-gray-400">Optimize your Google Business Profile to win local search.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who We Serve -->
+  <section id="clients" class="relative py-20 overflow-hidden">
+    <div class="absolute top-0 left-0 w-1/2 h-full bg-[linear-gradient(-45deg,_var(--color-deep-navy)_20%,_transparent_100%)] opacity-50 z-0"></div>
+    <div class="container mx-auto px-6 relative z-10">
+      <h2 class="text-4xl md:text-5xl font-bold mb-16 text-center">Who We <span class="gradient-text">Serve</span></h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 perspective-container">
+        <!-- cards trimmed for brevity; same as above -->
+        <div class="p-8 rounded-3xl glassmorphism service-card">
+          <h3 class="text-2xl font-bold mb-2">Local Service Businesses</h3>
+          <p class="text-gray-400">Lead capture, automation, and review growth for local brands.</p>
+        </div>
+        <div class="p-8 rounded-3xl glassmorphism service-card">
+          <h3 class="text-2xl font-bold mb-2">Home Services</h3>
+          <p class="text-gray-400">Scheduling, dispatch, and follow-ups on autopilot.</p>
+        </div>
+        <div class="p-8 rounded-3xl glassmorphism service-card">
+          <h3 class="text-2xl font-bold mb-2">Retail</h3>
+          <p class="text-gray-400">Personalized experiences and inventory intelligence.</p>
+        </div>
+        <div class="p-8 rounded-3xl glassmorphism service-card">
+          <h3 class="text-2xl font-bold mb-2">Hospitality</h3>
+          <p class="text-gray-400">Bookings, inquiries, and guest experience automation.</p>
+        </div>
+        <div class="p-8 rounded-3xl glassmorphism service-card">
+          <h3 class="text-2xl font-bold mb-2">Health & Wellness</h3>
+          <p class="text-gray-400">Secure scheduling and reminders for clinics and spas.</p>
+        </div>
+        <div class="p-8 rounded-3xl glassmorphism service-card">
+          <h3 class="text-2xl font-bold mb-2">Professional Services</h3>
+          <p class="text-gray-400">Onboarding, intake, and project workflows, simplified.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews" class="relative py-20 overflow-hidden">
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-[linear-gradient(45deg,_var(--color-deep-navy)_20%,_transparent_100%)] opacity-50 z-0"></div>
+    <div class="container mx-auto px-6 relative z-10 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-8 gradient-text">Our Client Reviews</h2>
+      <p class="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">See what our clients say about working with us.</p>
+
+      <div class="glassmorphism p-8 rounded-3xl max-w-4xl mx-auto">
+        <!-- IMPORTANT: iframe exists at load; the script (in <head>) will initialize it -->
+        <iframe
+          class="lc_reviews_widget"
+          src="https://link.siriussys.io/reputation/widgets/review_widget/qsRpwFouj6uMgzSHHDn3"
+          frameborder="0"
+          scrolling="no"
+          style="min-width:100%; width:100%; display:block; min-height:520px;">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="relative py-20 overflow-hidden">
+    <div class="absolute top-0 left-0 w-1/2 h-full bg-[linear-gradient(-45deg,_var(--color-deep-navy)_20%,_transparent_100%)] opacity-50 z-0"></div>
+    <div class="container mx-auto px-6 relative z-10 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-8 gradient-text">Schedule a Free Consultation</h2>
+      <p class="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
+        Ready to transform your business? Book a call using the calendar below.
+      </p>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 perspective-container max-w-6xl mx-auto">
+        <!-- Calendar (height increased to 1000px) -->
+        <div class="glassmorphism p-6 rounded-3xl service-card">
+          <h3 class="text-2xl font-bold mb-4">Book a Time</h3>
+          <p class="text-gray-400 mb-4">Select a date and time that works for you.</p>
+          <div class="relative w-full h-[1000px] overflow-hidden rounded-2xl flex items-center justify-center">
+            <iframe
+              src="https://link.siriussys.io/widget/booking/Qn4ugo4iZ8ZJ8eaxX1c4"
+              style="width:100%; border:none; overflow:hidden;"
+              scrolling="no"
+              id="Qn4ugo4iZ8ZJ8eaxX1c4_1756881301837"></iframe>
+            <script src="https://link.siriussys.io/js/form_embed.js" type="text/javascript"></script>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="glassmorphism p-6 rounded-3xl service-card">
+          <h3 class="text-2xl font-bold mb-4">Contact Us</h3>
+          <p class="text-gray-400 mb-4">Fill out the form and we’ll be in touch.</p>
+          <div class="relative w-full h-[900px] overflow-hidden rounded-2xl">
+            <iframe
+              src="https://link.siriussys.io/widget/form/BHqYGk6NAbu58Q68tSRk"
+              style="width:100%;height:100%;border:none;border-radius:12px"
+              id="inline-BHqYGk6NAbu58Q68tSRk"
+              data-layout="{'id':'INLINE'}"
+              data-trigger-type="alwaysShow"
+              data-activation-type="alwaysActivated"
+              data-deactivation-type="neverDeactivate"
+              data-form-name="Website Contact Form"
+              data-height="492"
+              data-layout-iframe-id="inline-BHqYGk6NAbu58Q68tSRk"
+              data-form-id="BHqYGk6NAbu58Q68tSRk"
+              title="Website Contact Form">
+            </iframe>
+            <script src="https://link.siriussys.io/js/form_embed.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="relative py-12 text-center text-sm text-gray-500">
+    <div class="container mx-auto px-6">
+      <p>&copy; 2025 Sirius Systems. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS (icons only) -->
+  <script>
+    window.onload = function () {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      } else {
+        console.warn("Lucide icons script not loaded.");
+      }
+    };
+  </script>
+</body>
+</html>
